@@ -8,7 +8,7 @@ export default function InsertForm({ onAddItem }) {
   function handleSubmit(e) {
     e.preventDefault();
     const newItem = { text };
-    console.log(newItem); 
+
     const request = axios.post("http://localhost:4000/items",newItem);
     request.then();
     request.catch((error)=>{
